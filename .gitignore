@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# Dados (Data)
+# Ignora os arquivos CSV, mas mantem a estrutura das pastas
+data/raw/*.csv
+data/processed/*.csv
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Modelos (Models)
+# Ignora os arquivos binários gerados pelo treino
+models/*.pkl
+models/*.h5
+models/*.keras
+!models/.gitkeep
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# SO
+.DS_Store
+Thumbs.db
